@@ -1,0 +1,21 @@
+Investigador: Juan Pablo Restrepo Jimenez
+
+Recursos:
+
+https://cursos.arquitecturajava.com/courses/
+
+https://www.freecodecamp.org/espanol/news/los-principios-solid-explicados-en-espanol/
+
+https://profile.es/blog/principios-solid-desarrollo-software-calidad/
+
+https://www.jetbrains.com/es-es/idea/
+
+https://cursos.arquitecturajava.com/p/diseno-patrones-basico
+
+https://cursos.arquitecturajava.com/p/spring-boot1
+
+https://cursos.arquitecturajava.com/p/introduccion-jpa2
+
+https://cursos.arquitecturajava.com/p/curso-spring-5-webflux-gratis
+
+https://www.udemy.com/courses/search/?lang=es&price=price-free&q=+java&sort=highest-rated&src=ukw
