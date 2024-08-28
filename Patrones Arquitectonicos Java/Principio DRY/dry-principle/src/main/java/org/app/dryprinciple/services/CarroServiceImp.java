@@ -45,7 +45,6 @@ public class CarroServiceImp implements CarroService{
         try(PreparedStatement preparedStatement = sqLconnection.getConnection().prepareStatement("delete from carro where id=?")) {
             preparedStatement.setInt(1,id);
             preparedStatement.executeUpdate();
-            preparedStatement.executeUpdate();
         }
     }
 
@@ -55,7 +54,6 @@ public class CarroServiceImp implements CarroService{
             preparedStatement.setString(1,carro.getMarca());
             preparedStatement.setString(2,carro.getModelo());
             preparedStatement.setInt(3,id);
-            preparedStatement.executeUpdate();
             preparedStatement.executeUpdate();
         }
     }

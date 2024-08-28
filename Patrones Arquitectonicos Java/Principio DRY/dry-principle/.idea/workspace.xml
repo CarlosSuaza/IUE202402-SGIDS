@@ -9,24 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/carro.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/form-carro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/Clases/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/clases/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/services/CarroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/services/CarroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/services/CarroServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/services/CarroServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/sqlUtil/SQLconnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/sqlUtil/SQLconnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
