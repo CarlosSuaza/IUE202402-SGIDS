@@ -2,7 +2,6 @@ package org.app.dryprinciple.sqlUtil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class SQLconnection {
@@ -17,7 +16,8 @@ public class SQLconnection {
         databasePassword = "root";
     }
 
-    public Connection getConnection() throws SQLException {
+    public Connection getConnection() throws SQLException, ClassNotFoundException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(databaseURL,databaseUser,databasePassword);
     }
 

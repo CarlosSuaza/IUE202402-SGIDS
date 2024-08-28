@@ -5,7 +5,8 @@
     <title>DRY-PRINCIPLE</title>
 </head>
 <body>
-<%String saludo = "DRY-PRINCIPLE";%>
-<h1><%=saludo%></h1>
+<%String word = "java";%>
+<h1>hello world from <%=word%></h1>
+<a href="${pageContext.request.contextPath}/carro">Ir a los carros</a>
 </body>
 </html>
