@@ -22,8 +22,7 @@ public class SrvCarro extends HttpServlet {
             session.setAttribute("carros",carroService.getCarros());
             response.sendRedirect("carro.jsp");
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e.getMessage());
-            response.sendRedirect("error.jsp");
+            throw new RuntimeException(e);
         }
     }
 
@@ -39,8 +38,7 @@ public class SrvCarro extends HttpServlet {
            carroService.addCarro(carro);
            response.sendRedirect("carro.jsp");
        }catch(SQLException | ClassNotFoundException e){
-           System.out.println(e.getMessage());
-           response.sendRedirect("error.jsp");
+           throw new RuntimeException(e);
        }
 
 
@@ -58,8 +56,7 @@ public class SrvCarro extends HttpServlet {
             carroService.updateCarro(carro,id);
             response.sendRedirect("carro.jsp");
         }catch(SQLException | ClassNotFoundException e){
-            System.out.println(e.getMessage());
-            response.sendRedirect("error.jsp");
+            throw new RuntimeException(e);
         }
     }
 
@@ -70,8 +67,7 @@ public class SrvCarro extends HttpServlet {
             carroService.removeCarro(id);
             response.sendRedirect("carro.jsp");
         }catch(SQLException | ClassNotFoundException e){
-            System.out.println(e.getMessage());
-            response.sendRedirect("error.jsp");
+            throw new RuntimeException(e);
         }
     }
 }

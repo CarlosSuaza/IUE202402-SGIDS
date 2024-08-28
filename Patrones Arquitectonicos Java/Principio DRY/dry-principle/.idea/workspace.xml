@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="" />
+    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,10 +164,26 @@
       <workItem from="1724803711718" duration="3830000" />
       <workItem from="1724807684824" duration="2096000" />
       <workItem from="1724849396181" duration="1010000" />
+      <workItem from="1724856123819" duration="1298000" />
+      <workItem from="1724861199887" duration="1438000" />
+      <workItem from="1724863952638" duration="794000" />
     </task>
+    <task id="LOCAL-00001" summary="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp">
+      <option name="closed" value="true" />
+      <created>1724857592446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724857592446</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp" />
+    <option name="LAST_COMMIT_MESSAGE" value="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp" />
   </component>
 </project>
