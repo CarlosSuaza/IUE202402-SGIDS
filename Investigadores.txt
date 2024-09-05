@@ -1,0 +1,8 @@
+Calidad Software Juan Pablo Restrepo: Patrones Arquitectonicos en Java
+
+Informatica Alejandro Rodriguez: Red Botnet Python
+
+Informatica Juan David Rojas: Programacion Funcional
+
+Informatica Juan Jose Henao: Analisis Forense en Ransomware
+
