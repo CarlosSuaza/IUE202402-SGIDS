@@ -5,6 +5,7 @@ import org.iuedesarrollosoftware.orm.entidades.AutorEntity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 
 public class AutorRepositorioImp implements AutorRepositorio {
@@ -20,11 +21,10 @@ public class AutorRepositorioImp implements AutorRepositorio {
     }
 
     @Override
-    public AutorEntity save(AutorEntity autor){
-        AutorEntity au = null;
+    public void save(AutorEntity autor){
         tx.begin();
         try{
-            au = em.merge(autor);
+            em.persist(autor);
             tx.commit();
         }catch (Exception e){
             if(tx.isActive()){
@@ -32,7 +32,6 @@ public class AutorRepositorioImp implements AutorRepositorio {
             }
             throw new RuntimeException(e);
         }
-        return au;
     }
 
     @Override
@@ -53,7 +52,7 @@ public class AutorRepositorioImp implements AutorRepositorio {
     }
 
     @Override
-    public void delete(String id) {
+    public void delete(UUID id) {
         tx.begin();
         try {
             em.remove(em.find(AutorEntity.class, id));
