@@ -1,0 +1,15 @@
+Algunos ejemplos de programación funcional en Python son: 
+ 
+Composición de funciones
+Se puede crear una función nueva componiendo otras ya definidas, usando el resultado de una función como entrada de otra. Por ejemplo, la función add toma un valor X y devuelve una función que toma otro valor Y, y finalmente devuelve la suma de ambos números. 
+ 
+Módulo operator
+Contiene funciones que corresponden a los operadores de Python, como operator.add(a, b) que suma dos valores, operator.ne(a, b) que es lo mismo que a != b, y operator.attrgetter('id') que retorna un invocable que obtiene el atributo .id. 
+ 
+Funciones en Python
+Las funciones son ciudadanos de primera clase en Python, por lo que se pueden introducir en cualquier lugar donde se permitan otros objetos. 
+ 
+Python es un lenguaje de programación multiparadigma, lo que significa que admite varios enfoques de programación, como la programación funcional, procedimental y orientada a objetos. 
+
+
+https://codigofacilito.com/articulos/programacion-funcional-python
