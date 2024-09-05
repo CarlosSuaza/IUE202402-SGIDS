@@ -9,13 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+    <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="se agrego gestion de errores usando el principio DRY">
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/entidades/AutorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/entidades/LibroEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/filters/MethodOverrideFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/AutorRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/AutorRepositorioImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/LibroRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/LibroRepositorioImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/servlets/SrvAutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/autor.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources/c3fb757a-cf20-468d-84b9-0f7533d742b1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources/c3fb757a-cf20-468d-84b9-0f7533d742b1/storage_v2/_src_/schema/drydb.adO2BQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/clases/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/services/CarroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/services/CarroServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/sqlUtil/SQLconnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/carro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/form-carro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +197,11 @@
       <workItem from="1724849396181" duration="1010000" />
       <workItem from="1724856123819" duration="1298000" />
       <workItem from="1724861199887" duration="1438000" />
-      <workItem from="1724863952638" duration="794000" />
+      <workItem from="1724863952638" duration="2441000" />
+      <workItem from="1724877277154" duration="5000" />
+      <workItem from="1725398319439" duration="36000" />
+      <workItem from="1725543285468" duration="696000" />
+      <workItem from="1725556295738" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp">
       <option name="closed" value="true" />
@@ -176,7 +211,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724857592446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="se agrego gestion de errores usando el principio DRY">
+      <option name="closed" value="true" />
+      <created>1724865905706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724865905706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="se agrego gestion de errores usando el principio DRY">
+      <option name="closed" value="true" />
+      <created>1724866454788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724866454788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +235,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp" />
-    <option name="LAST_COMMIT_MESSAGE" value="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp" />
+    <MESSAGE value="se agrego gestion de errores usando el principio DRY" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agrego gestion de errores usando el principio DRY" />
   </component>
 </project>
