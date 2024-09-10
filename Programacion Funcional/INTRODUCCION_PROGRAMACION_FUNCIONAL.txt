@@ -1,0 +1,33 @@
+* ¿Qué es la Programación Funcional?
+
+La programación funcional es un paradigma de programación en el que se utilizan funciones puras para construir programas. A diferencia de otros paradigmas como la programación orientada a objetos, donde se considera que la computación es un cambio de estado en el programa o los datos, en la programación funcional, la computación se representa como la evaluación de funciones matemáticas. Desde esta definición podemos definir algunas características clave de la programación funcional:
+
+** Funciones Puras : Las funciones en FP no tienen efectos secundarios. Esto significa que una función siempre devolverá el mismo resultado dado la misma entrada sin cambiar el estado del programa de alguna manera.
+
+** Inmutabilidad: los datos son inmutables en la programación funcional, lo que significa que una vez que se crea un valor, no se puede cambiar sobre la marcha.
+
+** Composición de Funciones: las funciones se pueden componer para crear funciones más complejas. Esto asegura un diseño modular y fácilmente entendible de los programas.
+
+** Funciones de orden superior : las funciones pueden aceptar otras funciones como argumentos y devolver funciones. Esto agrega flexibilidad y poder expresivo al código.
+
+** Lambda: las expresiones de funciones breves definidas sobre la marcha se denominan lambdas en la FP. Algunas ventajas de la FP son las siguientes:ют:
+
+* Fácil razonamiento sobre el código : ya que las funciones no tienen efectos secundarios y los datos son inmutables, el entendimiento del comportamiento del programa es más fácil.
+
+* Paralelismo : se vuelve mucho más fácil con la inmutabilidad y la falta de efectos secundarios.udevP
+
+* Poco Error: dado que no existen mutaciones ni estado compartido, la FP en su esencia pureza disminuye considerablemente la posibilidad de errores.
+
+Lenguajes Funcionales Ejemplos
+
+Haskell: lenguaje puramente funcional, famoso por su enfoque en la inmutabilidad y su uso de la programación monádica.
+
+Lisp: uno de los primeros lenguajes de programación y uno que influyó en la programación funcional moderna más que otros.
+
+Scala: lenguaje que busca combinar objetos y programación funcional.
+
+Clojure: un lenguaje inspirado en Lisp que se ejecuta en la máquina virtual JVM.
+
+Más informaciones
+
+Hay ejemplos adicionales en este repositorio, junto con los recursos para aprender más sobre la programación funcional. Si este es un tema intrigante, asegúrese de revisar los archivos y contribuciones.
