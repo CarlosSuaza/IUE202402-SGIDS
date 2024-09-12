@@ -10,43 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093c70cf-89d1-452d-bc3a-483253035119" name="Changes" comment="se agrego gestion de errores usando el principio DRY">
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/entidades/AutorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/entidades/LibroEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/filters/MethodOverrideFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/AutorRepositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/AutorRepositorioImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/LibroRepositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/repositorios/LibroRepositorioImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/java/org/iuedesarrollosoftware/orm/servlets/SrvAutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/autor.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources/c3fb757a-cf20-468d-84b9-0f7533d742b1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/dataSources/c3fb757a-cf20-468d-84b9-0f7533d742b1/storage_v2/_src_/schema/drydb.adO2BQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/clases/Carro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/filters/MethodOverrideFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/services/CarroService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/services/CarroServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/servlets/SrvCarro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/java/org/app/dryprinciple/sqlUtil/SQLconnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/carro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/form-carro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Principio DRY/dry-principle/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/autor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM, JPA, Spring Boot/orm/src/main/webapp/autor.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +166,7 @@
       <workItem from="1725398319439" duration="36000" />
       <workItem from="1725543285468" duration="696000" />
       <workItem from="1725556295738" duration="159000" />
+      <workItem from="1725561609975" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="se quitaron lineas de codigo repetidas en los metodos updateCarro y removeCarro de CarroServiceImp">
       <option name="closed" value="true" />

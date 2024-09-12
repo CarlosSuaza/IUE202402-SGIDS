@@ -9,7 +9,9 @@ import org.iuedesarrollosoftware.orm.repositorios.AutorRepositorio;
 import org.iuedesarrollosoftware.orm.repositorios.AutorRepositorioImp;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.util.UUID;
 
 @WebServlet(name = "SrvAutor", value = "/autor")
 public class SrvAutor extends HttpServlet {
@@ -41,6 +43,8 @@ public class SrvAutor extends HttpServlet {
             autor.setFechanacimiento(fechaNacimiento);
             autor.setFechamuerte(fechaMuerte);
             autor.setBiografia(biografia);
+            autor.setFechaactualizacion(LocalDate.now());
+            autor.setActivo(true);
             autorRepositorio.save(autor);
             response.sendRedirect("autor");
         }catch (Exception e) {
@@ -63,10 +67,22 @@ public class SrvAutor extends HttpServlet {
            autor.setFechanacimiento(fechaNacimiento);
            autor.setFechamuerte(fechaMuerte);
            autor.setBiografia(biografia);
+           autor.setId(UUID.fromString(id));
+           autor.setFechaactualizacion(LocalDate.now());
+           autor.setActivo(true);
            autorRepositorio.save(autor);
            response.sendRedirect("autor");
        }catch (Exception e) {
            throw new RuntimeException(e);
        }
+    }
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try {
+            String id = request.getParameter("_id");
+            autorRepositorio.delete(UUID.fromString(id));
+            response.sendRedirect("autor");
+        }catch(Exception e){
+            throw new RuntimeException(e);
+        }
     }
 }
