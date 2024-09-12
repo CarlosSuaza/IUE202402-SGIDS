@@ -6,3 +6,14 @@ Informatica Juan David Rojas: Programacion Funcional
 
 Informatica Juan Jose Henao: Analisis Forense en Ransomware
 
+20240912
+
+"Calidad Software Juan Pablo Restrepo: Patrones Arquitectonicos en Java
+"
+Informatica Alejandro Rodriguez: Red Botnet Python
+Informatica Juan David Rojas: Programacion Funcional
+Informatica Juan Jose Henao: Analisis Forense en Ransomware
+Jerónimo Henao Arango: Algoritmos de Cifrado Cuántico
+Susana Ríos Tabares: Framework Python PyScript
+
+
