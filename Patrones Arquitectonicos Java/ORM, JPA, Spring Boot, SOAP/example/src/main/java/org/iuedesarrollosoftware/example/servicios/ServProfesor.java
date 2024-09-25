@@ -1,10 +1,10 @@
 package org.iuedesarrollosoftware.example.servicios;
 
-import com.iuedesarrollodesoftware.app_spring_soap_orm.DTOs.ProfesorDTO;
+import org.iuedesarrollosoftware.example.DTOs.ProfesorDTO;
 
 import java.util.List;
 
-public interface ServicioProfesor {
+public interface ServProfesor {
 
     List<ProfesorDTO> verTodosProfesores();
     ProfesorDTO verProfesorPorId(String id);

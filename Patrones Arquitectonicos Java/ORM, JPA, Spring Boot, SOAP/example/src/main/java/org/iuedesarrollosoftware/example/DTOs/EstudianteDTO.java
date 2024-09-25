@@ -1,11 +1,11 @@
 package org.iuedesarrollosoftware.example.DTOs;
 
-import com.iuedesarrollodesoftware.app_spring_soap_orm.entidades.Curso;
-import com.iuedesarrollodesoftware.app_spring_soap_orm.entidades.Estudiante;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.iuedesarrollosoftware.example.entidades.Curso;
+import org.iuedesarrollosoftware.example.entidades.Estudiante;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: example
+
+  datasource:
+    url: ${DB-URL:jdbc:mysql://localhost:3306/educationdb?serverTimezone=UTC}
+    username: ${MYSQL_ROOT_USER:root}
+    password: ${MYSQL_ROOT_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

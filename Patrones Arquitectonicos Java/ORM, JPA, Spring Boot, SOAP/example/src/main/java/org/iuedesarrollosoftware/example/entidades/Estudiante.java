@@ -43,4 +43,12 @@ public class Estudiante {
             inverseJoinColumns = @JoinColumn(name = "cursoId"))
     private Set<Curso> cursos = new LinkedHashSet<>();
 
+    public Estudiante(String id, String nombres, String apellidos, String email, String telefono) {
+        this.id = id;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.email = email;
+        this.telefono = telefono;
+    }
+
 }

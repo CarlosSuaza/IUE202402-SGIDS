@@ -16,6 +16,7 @@ import java.util.Set;
 @Entity
 @Table(name = "curso")
 public class Curso {
+
     @Id
     @ColumnDefault("(uuid())")
     @Column(name = "id", nullable = false, length = 36)

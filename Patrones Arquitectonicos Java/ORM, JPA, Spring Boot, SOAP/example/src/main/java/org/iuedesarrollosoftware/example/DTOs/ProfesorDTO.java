@@ -1,11 +1,11 @@
 package org.iuedesarrollosoftware.example.DTOs;
 
-import com.iuedesarrollodesoftware.app_spring_soap_orm.entidades.Curso;
-import com.iuedesarrollodesoftware.app_spring_soap_orm.entidades.Profesor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.iuedesarrollosoftware.example.entidades.Curso;
+import org.iuedesarrollosoftware.example.entidades.Profesor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class ProfesorDTO {
 
     private List<CursoDTO> curso;
 
-    public ProfesorDTO(Profesor profesor,boolean verCursos) {
+    public ProfesorDTO(Profesor profesor, boolean verCursos) {
         this.id = profesor.getId();
         this.nombres = profesor.getNombres();
         this.apellidos = profesor.getApellidos();
