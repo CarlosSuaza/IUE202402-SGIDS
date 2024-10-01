@@ -30,7 +30,7 @@ public class ISEstudiante implements ServEstudiante {
         return estudianteDTOS;
     }
 
-    Optional<Estudiante> buscarEstudiantePorId(String id) {
+    private Optional<Estudiante> buscarEstudiantePorId(String id) {
         return estudianteRepo.findById(id);
     }
 
@@ -44,22 +44,32 @@ public class ISEstudiante implements ServEstudiante {
 
     }
 
-    private boolean validarEstudiante(EstudianteReq estudiante) {
+    private boolean validarEstudianteActualizar(EstudianteReq estudiante) {
         if(estudiante == null){
             return false;
         }
         if(estudiante.getNombres() == null || estudiante.getApellidos() == null || estudiante.getEmail() == null || estudiante.getTelefono() == null){
             return false;
         }
-        if (estudiante.getNombres().isBlank() || estudiante.getApellidos().isBlank() || estudiante.getEmail().isBlank() || estudiante.getTelefono().isBlank()){
+        return !estudiante.getNombres().isBlank() && !estudiante.getApellidos().isBlank() && !estudiante.getEmail().isBlank() && !estudiante.getTelefono().isBlank();
+    }
+
+    private boolean validarEstudianteInsertar(EstudianteReq estudiante) {
+        if(estudiante == null){
             return false;
         }
-        return true;
+        if(estudiante.getId() == null || estudiante.getNombres() == null || estudiante.getApellidos() == null || estudiante.getEmail() == null || estudiante.getTelefono() == null){
+            return false;
+        }
+        return !estudiante.getId().isBlank() && !estudiante.getNombres().isBlank() && !estudiante.getApellidos().isBlank() && !estudiante.getEmail().isBlank() && !estudiante.getTelefono().isBlank();
     }
 
     @Override
     public int insertarEstudiante(EstudianteReq estudiante) {
         if(buscarEstudiantePorId(estudiante.getId()).isPresent()){
+            return 0;
+        }
+        if(!validarEstudianteInsertar(estudiante)){
             return 0;
         }
         estudianteRepo.save(new Estudiante(estudiante.getId(), estudiante.getNombres(), estudiante.getApellidos(), estudiante.getEmail(),estudiante.getTelefono()));
@@ -71,7 +81,7 @@ public class ISEstudiante implements ServEstudiante {
         if(buscarEstudiantePorId(id).isEmpty()){
             throw new ClassNotFoundException("Estudiante no encontrado");
         }
-        if(!validarEstudiante(estudiante)){
+        if(!validarEstudianteActualizar(estudiante)){
             return 0;
         }
         Estudiante estudianteAux = buscarEstudiantePorId(id).get();
