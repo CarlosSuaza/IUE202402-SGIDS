@@ -36,8 +36,7 @@ public class ISEstudiante implements ServEstudiante {
 
     @Override
     public EstudianteDTO verEstudiantePorId(String id) throws ClassNotFoundException {
-
-        if(buscarEstudiantePorId(id).isPresent()){
+        if(buscarEstudiantePorId(id).isEmpty()){
             throw new ClassNotFoundException("Estudiante no encontrado");
         }
         return new EstudianteDTO(buscarEstudiantePorId(id).get(),true);
@@ -66,10 +65,10 @@ public class ISEstudiante implements ServEstudiante {
 
     @Override
     public int insertarEstudiante(EstudianteReq estudiante) {
-        if(buscarEstudiantePorId(estudiante.getId()).isPresent()){
+        if(!validarEstudianteInsertar(estudiante)){
             return 0;
         }
-        if(!validarEstudianteInsertar(estudiante)){
+        if(buscarEstudiantePorId(estudiante.getId()).isPresent()){
             return 0;
         }
         estudianteRepo.save(new Estudiante(estudiante.getId(), estudiante.getNombres(), estudiante.getApellidos(), estudiante.getEmail(),estudiante.getTelefono()));

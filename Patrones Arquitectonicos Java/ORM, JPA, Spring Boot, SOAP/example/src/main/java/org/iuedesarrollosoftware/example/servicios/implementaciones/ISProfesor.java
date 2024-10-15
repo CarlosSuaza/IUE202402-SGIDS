@@ -54,15 +54,15 @@ public class ISProfesor implements ServProfesor {
         if (profesorReq.getNombres() == null || profesorReq.getApellidos() == null || profesorReq.getEmail() == null || profesorReq.getTelefono() == null){
             return false;
         }
-        return !profesorReq.getId().isBlank() && !profesorReq.getNombres().isBlank() && !profesorReq.getApellidos().isBlank() && !profesorReq.getEmail().isBlank() && !profesorReq.getTelefono().isBlank();
+        return !profesorReq.getNombres().isBlank() && !profesorReq.getApellidos().isBlank() && !profesorReq.getEmail().isBlank() && !profesorReq.getTelefono().isBlank();
     }
 
     @Override
     public int insertarProfesor(ProfesorReq profesor) {
-        if (buscarProfesorPorId(profesor.getId()).isPresent()){
+        if(!validarProfesorInsertar(profesor)){
             return 0;
         }
-        if(!validarProfesorInsertar(profesor)){
+        if (buscarProfesorPorId(profesor.getId()).isPresent()){
             return 0;
         }
         Profesor profesorAux = new Profesor();
@@ -80,7 +80,7 @@ public class ISProfesor implements ServProfesor {
         if (buscarProfesorPorId(id).isEmpty()){
             return 0;
         }
-        if (validarProfesorActualizar(profesor)){
+        if (!validarProfesorActualizar(profesor)){
             return 0;
         }
         Profesor profesorAux = buscarProfesorPorId(id).get();

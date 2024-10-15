@@ -35,7 +35,7 @@ public class Profesor {
 
     @ColumnDefault("true")
     @Column(name = "activo", nullable = false)
-    private Boolean activo = false;
+    private Boolean activo = true;
 
     @OneToMany(mappedBy = "profesor")
     private Set<Curso> cursos = new LinkedHashSet<>();

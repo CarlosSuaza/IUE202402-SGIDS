@@ -10,9 +10,10 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB-URL: jdbc:mysql://db-service:3306/educationdb?serverTimezone=UTC
+      DB_URL: jdbc:mysql://db-service:3306/educationdb?serverTimezone=UTC
       MYSQL_ROOT_PASSWORD: root
       MYSQL_ROOT_USER: root
+      JPA_ACTION: create
     networks:
       - education-network
     depends_on:
@@ -27,14 +28,14 @@ services:
       MYSQL_ROOT_USER: root
       MYSQL_DATABASE: educationdb
     ports:
-      - "3307:3306"
+      - "3308:3306"
     volumes:
       - mysql-volume:/var/lib/mysql
     networks:
       - education-network
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
-      interval: 20s
+      interval: 1m
       timeout: 10s
       retries: 5
       start_period: 30s

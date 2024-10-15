@@ -39,7 +39,7 @@ public class Curso {
     @Column(name = "activo", nullable = false)
     private Boolean activo = true;
 
-    @ManyToMany(mappedBy = "cursos")
+    @ManyToMany(mappedBy = "cursos", fetch = FetchType.EAGER)
     private Set<Estudiante> estudiantes;
 
 }

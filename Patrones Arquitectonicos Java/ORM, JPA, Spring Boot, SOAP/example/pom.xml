@@ -11,6 +11,7 @@
 	<groupId>org.iuedesarrollosoftware</groupId>
 	<artifactId>example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>example</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -18,7 +19,12 @@
 		<license/>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<name>Juan Pablo</name>
+			<email>jprestrepo346@gmail.com</email>
+			<timezone>America/Bogota</timezone>
+			<organization>IUE</organization>
+		</developer>
 	</developers>
 	<scm>
 		<connection/>
@@ -44,6 +50,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.6.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>

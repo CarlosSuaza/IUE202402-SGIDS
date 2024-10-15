@@ -35,7 +35,7 @@ public class Estudiante {
 
     @ColumnDefault("true")
     @Column(name = "activo", nullable = false)
-    private Boolean activo = false;
+    private Boolean activo = true;
 
     @ManyToMany
     @JoinTable(name = "estudiante_curso",

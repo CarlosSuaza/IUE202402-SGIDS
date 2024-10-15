@@ -37,7 +37,7 @@ public class ISCurso implements ServCurso {
         }
         List<CursoDTO> cursoDTOs = new ArrayList<>();
         for (Curso curso : cursos){
-            CursoDTO cursoDTO = new CursoDTO(curso,false,false);
+            cursoDTOs.add(new CursoDTO(curso,false,false));
         }
         return cursoDTOs;
     }
